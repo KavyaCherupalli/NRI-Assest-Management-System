@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .navi{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(43, 171, 226);
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+        }
+        label.logo{
+              
+              text-align: center;
+              color: whitesmoke;
+              font-size: 35px;
+              line-height: 80px;
+              font-weight: bold;
+              padding: 0 100px;
+        }
+        .navi ul{
+            float:left;
+            margin-right: 100px;
+           
+           
+        }
+       navi ul li a{
+            color: rgb(4, 4, 249);
+            font-size: 16px;
+            padding: 8px 7px;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        .a:active,a:hover{
+            background: #1b9bff;
+            transition: .5s;
+        }
+        .wrapper{
+            display: flex;
+            position: relative;
+        }
+        .wrapper .sidebar{
+            position: fixed;
+            width: 300px;
+            height: 100%;
+            background: violet;
+            padding: 30px 0;
+        }
+        .wrapper .sidebar h2{
+            color: rgb(4, 0, 128);
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .wrapper .sidebar ul{
+            line-height: 50px;
+            text-align: center; 
+            
+        }
+        .wrapper .sidebar ul li{
+            font-size: 15px;
+            padding: 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-top: 1px solid rgba(225,225,225,0.05);
+        }
+        .wrapper .sidebar ul li a{
+            color: aqua;
+        }
+        .wrapper .sidebar ul li:hover{
+            background: #594a8d;
+        }
+        .x{
+            display: grid;
+            background-color: #1b9bff;
+           grid-template-columns: auto auto;
+           grid-template-rows: 300px 500px;
+           
+        }
+        .x h1{
+            
+            text-align: center;
+            color: darkblue;
+            font-size: 35px;
+            line-height: 40px;
+            font-weight: bold;
+            padding: 10px 100px;
+            margin-left: 500px;
+        }
+        
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <nav class="navi">
+        <label class="logo">CVR COLLEGE</label>
+        <ul>
+            <li><a class="action" href="#">Home</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">login</a></li>
+           
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Department</h2>
+            <ul>
+            <li><a class="action" href="#">CSE</a></li>
+            <li><a href="#">ECE</a></li>
+            <li><a href="#">EEE</a></li>
+            <li><a href="#">MECH</a></li>
+            <li><a href="#">CS-IT</a></li>
+            <li><a href="#">IT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="x">
+        
+        <h1>CVR COLLEGE OF ENGINEERING</h1>
+       
+    </div>
+</body>
+</html>
